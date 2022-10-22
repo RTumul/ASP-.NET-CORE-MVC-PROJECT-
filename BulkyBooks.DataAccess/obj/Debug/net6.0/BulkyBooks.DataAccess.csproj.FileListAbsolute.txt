@@ -1,0 +1,17 @@
+D:\C# Prac\BulkyBooks.DataAccess\bin\Debug\net6.0\BulkyBooks.DataAccess.deps.json
+D:\C# Prac\BulkyBooks.DataAccess\bin\Debug\net6.0\BulkyBooks.DataAccess.runtimeconfig.json
+D:\C# Prac\BulkyBooks.DataAccess\bin\Debug\net6.0\BulkyBooks.DataAccess.dll
+D:\C# Prac\BulkyBooks.DataAccess\bin\Debug\net6.0\ref\BulkyBooks.DataAccess.dll
+D:\C# Prac\BulkyBooks.DataAccess\bin\Debug\net6.0\BulkyBooks.DataAccess.pdb
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.csproj.AssemblyReference.cache
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.AssemblyInfoInputs.cache
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.AssemblyInfo.cs
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.csproj.CoreCompileInputs.cache
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.dll
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\ref\BulkyBooks.DataAccess.dll
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.pdb
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.genruntimeconfig.cache
+D:\C# Prac\BulkyBooks.DataAccess\bin\Debug\net6.0\BulckyBooks.Models.dll
+D:\C# Prac\BulkyBooks.DataAccess\bin\Debug\net6.0\BulckyBooks.Models.pdb
+D:\C# Prac\BulkyBooks.DataAccess\obj\Debug\net6.0\BulkyBooks.DataAccess.csproj.CopyComplete

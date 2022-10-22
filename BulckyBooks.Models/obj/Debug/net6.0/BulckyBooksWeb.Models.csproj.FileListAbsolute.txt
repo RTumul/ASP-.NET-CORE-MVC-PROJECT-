@@ -1,0 +1,12 @@
+D:\C# Prac\BulckyBooksWeb.Models\bin\Debug\net6.0\BulckyBooksWeb.Models.deps.json
+D:\C# Prac\BulckyBooksWeb.Models\bin\Debug\net6.0\BulckyBooksWeb.Models.dll
+D:\C# Prac\BulckyBooksWeb.Models\bin\Debug\net6.0\ref\BulckyBooksWeb.Models.dll
+D:\C# Prac\BulckyBooksWeb.Models\bin\Debug\net6.0\BulckyBooksWeb.Models.pdb
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\BulckyBooksWeb.Models.csproj.AssemblyReference.cache
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\BulckyBooksWeb.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\BulckyBooksWeb.Models.AssemblyInfoInputs.cache
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\BulckyBooksWeb.Models.AssemblyInfo.cs
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\BulckyBooksWeb.Models.csproj.CoreCompileInputs.cache
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\BulckyBooksWeb.Models.dll
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\ref\BulckyBooksWeb.Models.dll
+D:\C# Prac\BulckyBooksWeb.Models\obj\Debug\net6.0\BulckyBooksWeb.Models.pdb
