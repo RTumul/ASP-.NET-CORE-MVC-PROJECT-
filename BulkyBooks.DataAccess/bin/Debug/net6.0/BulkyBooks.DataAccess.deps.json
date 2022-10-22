@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "BulkyBooks.DataAccess/1.0.0": {
         "dependencies": {
-          "BulckyBooks.Models": "1.0.0",
+          "BulkyBooks.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
@@ -485,14 +485,14 @@
           }
         }
       },
-      "BulckyBooks.Models/1.0.0": {
+      "BulkyBooks.Models/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
         },
         "runtime": {
-          "BulckyBooks.Models.dll": {}
+          "BulkyBooks.Models.dll": {}
         }
       }
     }
@@ -804,7 +804,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "BulckyBooks.Models/1.0.0": {
+    "BulkyBooks.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

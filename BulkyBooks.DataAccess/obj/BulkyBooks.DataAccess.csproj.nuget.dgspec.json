@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# Prac\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj": {}
+    "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\C# Prac\\BulckyBooksWeb.Models\\BulckyBooks.Models.csproj": {
+    "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# Prac\\BulckyBooksWeb.Models\\BulckyBooks.Models.csproj",
-        "projectName": "BulckyBooks.Models",
-        "projectPath": "D:\\C# Prac\\BulckyBooksWeb.Models\\BulckyBooks.Models.csproj",
+        "projectUniqueName": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj",
+        "projectName": "BulkyBooks.DataAccess",
+        "projectPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\C# Prac\\BulckyBooksWeb.Models\\obj\\",
+        "outputPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,7 +31,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\BulkyBooks.Models.csproj": {
+                "projectPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\BulkyBooks.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -82,14 +86,14 @@
         }
       }
     },
-    "D:\\C# Prac\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj": {
+    "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\BulkyBooks.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# Prac\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj",
-        "projectName": "BulkyBooks.DataAccess",
-        "projectPath": "D:\\C# Prac\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj",
+        "projectUniqueName": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\BulkyBooks.Models.csproj",
+        "projectName": "BulkyBooks.Models",
+        "projectPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\BulkyBooks.Models.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\C# Prac\\BulkyBooks.DataAccess\\obj\\",
+        "outputPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -109,11 +113,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\C# Prac\\BulckyBooksWeb.Models\\BulckyBooks.Models.csproj": {
-                "projectPath": "D:\\C# Prac\\BulckyBooksWeb.Models\\BulckyBooks.Models.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

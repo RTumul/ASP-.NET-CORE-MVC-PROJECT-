@@ -3122,26 +3122,11 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "BulckyBooks.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.10",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
-        },
-        "compile": {
-          "bin/placeholder/BulckyBooks.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BulckyBooks.Models.dll": {}
-        }
-      },
       "BulkyBooks.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BulckyBooks.Models": "1.0.0",
+          "BulkyBooks.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
@@ -3151,6 +3136,21 @@
         },
         "runtime": {
           "bin/placeholder/BulkyBooks.DataAccess.dll": {}
+        }
+      },
+      "BulkyBooks.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
+        },
+        "compile": {
+          "bin/placeholder/BulkyBooks.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBooks.Models.dll": {}
         }
       }
     }
@@ -9653,21 +9653,21 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "BulckyBooks.Models/1.0.0": {
-      "type": "project",
-      "path": "../BulckyBooksWeb.Models/BulckyBooks.Models.csproj",
-      "msbuildProject": "../BulckyBooksWeb.Models/BulckyBooks.Models.csproj"
-    },
     "BulkyBooks.DataAccess/1.0.0": {
       "type": "project",
       "path": "../BulkyBooks.DataAccess/BulkyBooks.DataAccess.csproj",
       "msbuildProject": "../BulkyBooks.DataAccess/BulkyBooks.DataAccess.csproj"
+    },
+    "BulkyBooks.Models/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBooks.Models/BulkyBooks.Models.csproj",
+      "msbuildProject": "../BulkyBooks.Models/BulkyBooks.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BulckyBooks.Models >= 1.0.0",
       "BulkyBooks.DataAccess >= 1.0.0",
+      "BulkyBooks.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
@@ -9683,11 +9683,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# Prac\\BulkyBooksWeb\\BulkyBooksWeb.csproj",
+      "projectUniqueName": "D:\\C# Prac\\BulkyBook Project\\BulkyBooksWeb\\BulkyBooksWeb.csproj",
       "projectName": "BulkyBooksWeb",
-      "projectPath": "D:\\C# Prac\\BulkyBooksWeb\\BulkyBooksWeb.csproj",
+      "projectPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooksWeb\\BulkyBooksWeb.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\C# Prac\\BulkyBooksWeb\\obj\\",
+      "outputPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooksWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9708,11 +9708,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\C# Prac\\BulckyBooksWeb.Models\\BulckyBooks.Models.csproj": {
-              "projectPath": "D:\\C# Prac\\BulckyBooksWeb.Models\\BulckyBooks.Models.csproj"
+            "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj": {
+              "projectPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj"
             },
-            "D:\\C# Prac\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj": {
-              "projectPath": "D:\\C# Prac\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj"
+            "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\BulkyBooks.Models.csproj": {
+              "projectPath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.Models\\BulkyBooks.Models.csproj"
             }
           }
         }

@@ -25,7 +25,12 @@
       "ProjectGuid": "84bb78b7-599c-44e6-b137-41be3dcc3d03",
       "DisplayName": "BulkyBooks.DataAccess",
       "ColorIndex": 3
+    },
+    "92225a91-54d2-4121-a5d4-d1cfb6838d2d": {
+      "ProjectGuid": "92225a91-54d2-4121-a5d4-d1cfb6838d2d",
+      "DisplayName": "BulkyBooks.Models",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

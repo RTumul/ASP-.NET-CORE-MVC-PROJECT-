@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "BulkyBooksWeb/1.0.0": {
         "dependencies": {
-          "BulckyBooks.Models": "1.0.0",
           "BulkyBooks.DataAccess": "1.0.0",
+          "BulkyBooks.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
@@ -2274,25 +2274,25 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "BulckyBooks.Models/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.10",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
-        },
-        "runtime": {
-          "BulckyBooks.Models.dll": {}
-        }
-      },
       "BulkyBooks.DataAccess/1.0.0": {
         "dependencies": {
-          "BulckyBooks.Models": "1.0.0",
+          "BulkyBooks.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
         },
         "runtime": {
           "BulkyBooks.DataAccess.dll": {}
+        }
+      },
+      "BulkyBooks.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
+        },
+        "runtime": {
+          "BulkyBooks.Models.dll": {}
         }
       }
     }
@@ -3535,12 +3535,12 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "BulckyBooks.Models/1.0.0": {
+    "BulkyBooks.DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "BulkyBooks.DataAccess/1.0.0": {
+    "BulkyBooks.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

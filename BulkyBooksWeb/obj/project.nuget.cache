@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WwO3jAGHBG1oi9ojLLOzq8P+EnHJRtimQip29U+ufKD2eaPqBzXgtQZOCS80jOvoMUyoEaGSIWU0e2+E9ivNtw==",
+  "dgSpecHash": "sJ/sbj7hkOL2UtAmu+zH7NkJUK9B1+/qC/2AaOGDishCPfeJnUsIw60ieQIBSQczbRjzUUwRcfXF5H97FTKKbQ==",
   "success": true,
-  "projectFilePath": "D:\\C# Prac\\BulkyBooksWeb\\BulkyBooksWeb.csproj",
+  "projectFilePath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooksWeb\\BulkyBooksWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

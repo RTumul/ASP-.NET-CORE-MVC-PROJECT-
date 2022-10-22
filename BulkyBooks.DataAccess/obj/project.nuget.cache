@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "15vfIjycZf+Loe6Or68plV/dja2pxHDNuWw0nLn+KHkFXhYMoFSy/X9RLfPGJgnRuLWHLVwjskjXpW0+IA5CHA==",
+  "dgSpecHash": "9W/lSEmq+PXLyFpm3euWxJ8r/m/Zl8KnSZwPGMVqFPpdHWtsyF0NRhGK4MrIgL77AB76vzVXLENnQ/cWZCnHhw==",
   "success": true,
-  "projectFilePath": "D:\\C# Prac\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj",
+  "projectFilePath": "D:\\C# Prac\\BulkyBook Project\\BulkyBooks.DataAccess\\BulkyBooks.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
