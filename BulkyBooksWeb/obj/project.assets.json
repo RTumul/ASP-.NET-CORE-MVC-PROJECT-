@@ -3129,7 +3129,8 @@
           "BulkyBooks.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
+          "System.Linq.Expressions": "4.3.0"
         },
         "compile": {
           "bin/placeholder/BulkyBooks.DataAccess.dll": {}
