@@ -2,7 +2,7 @@
 
 @model User
 @{
-    ViewData["Title"] = "Create New User";
+    ViewData["Title"] = "Edit User";
 }
 
  <partial name=_Notification />
@@ -26,7 +26,7 @@
             <span asp-validation-for="EmailAddress" class="text-danger"></span>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+    <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
     <a class="btn btn-danger" asp-action="Index" asp-controller="User">Back</a>
 </form>
 

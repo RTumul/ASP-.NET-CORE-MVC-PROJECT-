@@ -34,6 +34,69 @@ namespace BulkyBooksWeb.Controllers
                 TempData["success"] = "User Created Successfully";
                 return RedirectToAction("Index");
             }
+            TempData["error"] = "There is something wrong";
+            return View(obj);
+        }
+
+        public IActionResult Edit(int? id)
+        {
+            if(id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var userFromDb = _db.Users.Find(id);
+            if(userFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(userFromDb);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(User obj)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Users.Update(obj);
+                _db.SaveChanges();
+                TempData["success"] = "User Updated Successfully";
+                return RedirectToAction("Index");
+            }
+            TempData["error"] = "There is something wrong";
+            return View(obj);
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var userFromDb = _db.Users.Find(id);
+            if (userFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(userFromDb);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Delete")]
+        public IActionResult DeletePOST(int? id)
+        {
+            var obj = _db.Users.Find(id);
+            if (obj != null) 
+            {
+                _db.Users.Remove(obj);
+                _db.SaveChanges();
+                TempData["success"] = "User Deleted Successfully";
+                return RedirectToAction("Index");
+            }
+               
+            
+            TempData["error"] = "There is something wrong";
             return View(obj);
         }
     }

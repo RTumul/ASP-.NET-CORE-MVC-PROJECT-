@@ -1,0 +1,40 @@
+﻿
+
+@model User
+@{
+    ViewData["Title"] = "Delete User";
+}
+
+ <partial name=_Notification />
+
+ <input asp-for="Id" hidden />
+
+<form method="post" asp-action="Delete">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-secondary">Delete User</h2>
+            <hr />
+        </div>
+        
+       
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" disabled class="form-control" />
+            
+        </div>
+        <div class="mb-3">
+            <label asp-for="EmailAddress"></label>
+            <input asp-for="EmailAddress" disabled class="form-control" />
+            
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:150px">Delete</button>
+    <a class="btn btn-danger" asp-action="Index" asp-controller="User">Back</a>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+       
+    }
+}
