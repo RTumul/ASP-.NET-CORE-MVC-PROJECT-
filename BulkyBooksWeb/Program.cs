@@ -1,4 +1,7 @@
 using BulkyBooks.DataAccess;
+using BulkyBooks.DataAccess.Repository;
+using BulkyBooks.DataAccess.Repository.IRepository;
+using BulkyBooks.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +11,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(
     builder.Configuration.GetConnectionString("MySQLConnection")
     ));
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
