@@ -1,6 +1,6 @@
-﻿@model IEnumerable<User> 
+﻿@model IEnumerable<CoverType>
 @{
-    ViewData["Title"] = "User List";
+    ViewData["Title"] = "Cover Types";
 }
 
 <partial name= "_Notification" />
@@ -8,11 +8,11 @@
 <div class="container p-3">
     <div class="row pt-3">
         <div class="col-6">
-            <h2 class="text-secondary">User Lists</h2>
+            <h2 class="text-secondary">Cover Types</h2>
         </div>
         <div class="col-6 text-end">
-            <a asp-controller="User" asp-action="Create" class="btn btn-primary">
-               <b>Create New User</b>
+            <a asp-controller="CoverType" asp-action="Create" class="btn btn-primary">
+               <b>Upload New Cover Type</b>
             </a>
         </div>
     </div>
@@ -22,17 +22,13 @@
     <thead>
         <tr>
             <th>
-                User Name
+                Cover Type
             </th>
-            <th>
-                User Email
-            </th>
-            <th>
-                User Type
-            </th>
+            
             <th colspan=2>
                 Actions
             </th>
+           
         </tr>
     </thead>
     @foreach (var obj in Model)
@@ -41,20 +37,16 @@
             <td width="50%">
                 @obj.Name
             </td>
-            <td width="30%">
-                @obj.EmailAddress
-            </td>
-            <td width="30%">
-                @obj.UserType
-            </td>
+            
+            
             <td>
                 <div class="w-75 btn-group" role="group">
-                    <a asp-action="Edit" asp-controller="User" asp-route-id="@obj.Id" class="btn btn-primary mx-2"> Edit</a> 
+                    <a asp-action="Edit" asp-controller="CoverType" asp-route-id="@obj.Id" class="btn btn-primary mx-2"> Edit</a> 
                 </div>
             </td>
             <td>
                 <div class="w-75 btn-group" role="group">
-                    <a asp-action="Delete" asp-controller="User" asp-route-id="@obj.Id" class="btn btn-danger mx-2">Delete</a> 
+                    <a asp-action="Delete" asp-controller="CoverType" asp-route-id="@obj.Id" class="btn btn-danger mx-2">Delete</a> 
                 </div>
             </td>
             
@@ -64,3 +56,4 @@
 
     </tbody>
 </table>
+

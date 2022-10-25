@@ -1,21 +1,23 @@
 ﻿using BulkyBooks.DataAccess;
+using BulkyBooks.DataAccess.Repository;
 using BulkyBooks.DataAccess.Repository.IRepository;
 using BulkyBooks.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyBooksWeb.Controllers
 {
+    [Area("Admin")]
     public class UserController : Controller
     {
-        private readonly IUserRepository _db;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public UserController(IUserRepository Db)
+        public UserController(IUnitOfWork unitOfWork)
         {
-            _db = Db;
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            IEnumerable<User> userList = _db.GETAll();
+            IEnumerable<User> userList = _unitOfWork.User.GETAll();
             return View(userList);
         }
 
@@ -30,8 +32,8 @@ namespace BulkyBooksWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Add(obj);
-                _db.Save();
+                _unitOfWork.User.Add(obj);
+                _unitOfWork.Save();
                 TempData["success"] = "User Created Successfully";
                 return RedirectToAction("Index");
             }
@@ -45,7 +47,7 @@ namespace BulkyBooksWeb.Controllers
             {
                 return NotFound();
             }
-            var userFromDb = _db.GetFirstOrDefault(u=>u.Id==id);
+            var userFromDb = _unitOfWork.User.GetFirstOrDefault(u=>u.Id==id);
             if(userFromDb == null)
             {
                 return NotFound();
@@ -59,8 +61,8 @@ namespace BulkyBooksWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Update(obj);
-                _db.Save();
+                _unitOfWork.User.Update(obj);
+                _unitOfWork.Save();
                 TempData["success"] = "User Updated Successfully";
                 return RedirectToAction("Index");
             }
@@ -74,7 +76,7 @@ namespace BulkyBooksWeb.Controllers
             {
                 return NotFound();
             }
-            var userFromDb = _db.GetFirstOrDefault(u=>u.Id==id);
+            var userFromDb = _unitOfWork.User.GetFirstOrDefault(u=>u.Id==id);
             if (userFromDb == null)
             {
                 return NotFound();
@@ -87,11 +89,11 @@ namespace BulkyBooksWeb.Controllers
         [ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _db.GetFirstOrDefault(u=>u.Id==id);
+            var obj = _unitOfWork.User.GetFirstOrDefault(u=>u.Id==id);
             if (obj != null) 
             {
-                _db.Remove(obj);
-                _db.Save();
+                _unitOfWork.User.Remove(obj);
+                _unitOfWork.Save();
                 TempData["success"] = "User Deleted Successfully";
                 return RedirectToAction("Index");
             }

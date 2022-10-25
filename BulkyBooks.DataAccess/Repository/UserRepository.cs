@@ -16,14 +16,11 @@ namespace BulkyBooks.DataAccess.Repository
         {
             _db = db;
         }
-        public void Save()
-        {
-            _db.SaveChanges();
-        }
+      
 
         public void Update(User obj)
         {
-            _db.Update(obj);
+            _db.Users.Update(obj);
         }
     }
 }

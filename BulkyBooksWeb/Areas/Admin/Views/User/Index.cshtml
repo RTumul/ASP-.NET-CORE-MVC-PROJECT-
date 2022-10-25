@@ -1,0 +1,66 @@
+﻿@model IEnumerable<User> 
+@{
+    ViewData["Title"] = "User List";
+}
+
+<partial name= "_Notification" />
+
+<div class="container p-3">
+    <div class="row pt-3">
+        <div class="col-6">
+            <h2 class="text-secondary">User Lists</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="User" asp-action="Create" class="btn btn-primary">
+               <b>Create New User</b>
+            </a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-stripped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                User Name
+            </th>
+            <th>
+                User Email
+            </th>
+            <th>
+                User Type
+            </th>
+            <th colspan=2>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    @foreach (var obj in Model)
+    {
+        <tr>
+            <td width="50%">
+                @obj.Name
+            </td>
+            <td width="30%">
+                @obj.EmailAddress
+            </td>
+            <td width="30%">
+                @obj.UserType
+            </td>
+            <td>
+                <div class="w-75 btn-group" role="group">
+                    <a asp-action="Edit" asp-controller="User" asp-route-id="@obj.Id" class="btn btn-primary mx-2"> Edit</a> 
+                </div>
+            </td>
+            <td>
+                <div class="w-75 btn-group" role="group">
+                    <a asp-action="Delete" asp-controller="User" asp-route-id="@obj.Id" class="btn btn-danger mx-2">Delete</a> 
+                </div>
+            </td>
+            
+        </tr>
+    }
+    <tbody>
+
+    </tbody>
+</table>

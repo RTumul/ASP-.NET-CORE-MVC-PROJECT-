@@ -6,9 +6,9 @@ namespace BulkyBooks.Models
     {
         [Key]
         public int Id { get; set; } 
-        [Required, Display(Name ="Product Name")]
+        [Required, Display(Name ="Category Name")]
         public string ProductName { get; set; }
-        [Required, Display(Name ="Product Price")]
+        [Required, Display(Name ="Category Price")]
         public float ProductPrice { get; set; }
     }
 }
